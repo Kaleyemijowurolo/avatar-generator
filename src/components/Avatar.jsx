@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import '../Styles/Avatar.css';
+import '../styles/Avatar.css';
 import Axios from 'axios';
 
 const Avatar = () => {

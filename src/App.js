@@ -25,7 +25,7 @@
 // export default App;
 
 import './App.css';
-import Avatar from './Components/Avatar';
+import Avatar from './components/Avatar';
 
 function App() {
 return (

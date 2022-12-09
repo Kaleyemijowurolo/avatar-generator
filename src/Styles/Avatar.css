@@ -4,7 +4,7 @@
 .nav {
   height: 6vh;
   width: 100%;
-  background-color: #313442;
+  background-color: #0e1430;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -37,17 +37,17 @@
   justify-content: center;
 }
 button {
-  width: 6em;
-  height: 2.5em;
+  padding: 10px 15px;
   margin: 10px;
   font-size: 20px;
   font-weight: 600;
   font-family: "Roboto Mono", monospace;
-  background-color: rgb(231, 231, 231);
-  box-shadow: 2px 3px 5px rgb(102, 101, 101);
-  border-radius: 15px;
+
+  border-radius: 10px;
   border: none;
   transition: 0.2s;
+  background: #e0e0e0;
+  box-shadow: inset 20px -20px 60px #bebebe, inset -20px 20px 60px #ffffff;
 }
 button:active {
   box-shadow: none;
@@ -56,10 +56,14 @@ button:active {
   background-color: #ffffff;
 }
 #gen {
-  background-color: #4361ee;
+  background-color: #0c1435;
+  box-shadow: inset 20px -20px 60px #0c1435, inset -20px 20px 60px #ffffff;
   color: white;
 }
 #down {
-  background-color: #eb3349;
-  color: white;
+  box-shadow: inset 20px -20px 60px transparent,
+    inset -20px 20px 60px transparent;
+  border: 2px solid #0c1435;
+  color: #0c1435;
+  background: transparent;
 }
