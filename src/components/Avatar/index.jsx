@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import '../styles/Avatar.css';
+import './Avatar.css';
 import Axios from 'axios';
 
 const Avatar = () => {
-
+const date = new Date()
 	// Setting up the initial states using react hook 'useState'
 	const [sprite, setSprite] = useState("bottts");
 	const [seed, setSeed] = useState(1000);
@@ -11,6 +11,8 @@ const Avatar = () => {
 	// Function to set the current sprite type
 	function handleSprite(spritetype) {
 		setSprite(spritetype);
+		
+
 	}
 	
 	// Function to generate random seeds for the API
@@ -49,19 +51,19 @@ const Avatar = () => {
 			</div>
 			<div className="home">
 				<div className="btns">
-					<button onClick={() => {
+					<button className={`active focus`} onClick={() => {
 						handleSprite("avataaars") }}>Human</button>
-					<button onClick={() => {
+					<button className={`active focus`} onClick={() => {
 						handleSprite("human") }}>Pixel</button>
-					<button onClick={() => {
+					<button className={`active focus`} onClick={() => {
 						handleSprite("bottts") }}>Bots</button>
-					<button onClick={() => {
+					<button className={`active focus`} onClick={() => {
 						handleSprite("jdenticon") }}>Vector</button>
-					<button onClick={() => {
+					<button className={`active focus`} onClick={() => {
 						handleSprite("identicon") }}>Identi</button>
-					<button onClick={() => {
+					<button className={`active focus`} onClick={() => {
 						handleSprite("gridy") }}>Alien</button>
-					<button onClick={() => {
+					<button className={`active focus`} onClick={() => {
 						handleSprite("micah") }}>Avatars</button>
 				</div>
 				<div className="avatar">
@@ -75,6 +77,7 @@ const Avatar = () => {
 						downloadImage() }}>Download</button>
 				</div>
 			</div>
+			<footer>&copy;{date.getFullYear()} Kayode Kolade C </footer>
 		</div>
 	)
 }

@@ -14,7 +14,7 @@
 }
 .home {
   box-sizing: border-box;
-  height: 94vh;
+  height: 92vh;
   width: 100%;
   gap: 15px;
   display: flex;
@@ -40,20 +40,27 @@ button {
   padding: 10px 15px;
   margin: 10px;
   font-size: 20px;
+  cursor: pointer;
   font-weight: 600;
   font-family: "Roboto Mono", monospace;
-
   border-radius: 10px;
-  border: none;
-  transition: 0.2s;
+  border: 1px solid transparent;
+  transition: all ease-in-out 200ms;
   background: #e0e0e0;
   box-shadow: inset 20px -20px 60px #bebebe, inset -20px 20px 60px #ffffff;
 }
-button:active {
-  box-shadow: none;
+
+.active:active,
+.focus:focus {
+  border: 1px solid #0c1435;
+  box-shadow: inset 20px -20px 60px transparent,
+    inset -20px 20px 60px transparent;
+  color: #0c1435;
+  background: transparent;
 }
 .btns > button:hover {
   background-color: #ffffff;
+  border: 1px solid #0c1435;
 }
 #gen {
   background-color: #0c1435;
@@ -63,7 +70,15 @@ button:active {
 #down {
   box-shadow: inset 20px -20px 60px transparent,
     inset -20px 20px 60px transparent;
-  border: 2px solid #0c1435;
+  border: 1px solid #0c1435;
   color: #0c1435;
   background: transparent;
+}
+
+footer {
+  height: 2vh;
+  text-align: left;
+  text-indent: 1rem;
+  color: #0c1435;
+  font-size: 12px;
 }
