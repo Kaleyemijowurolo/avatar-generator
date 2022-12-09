@@ -45,7 +45,7 @@ const Avatar = () => {
 	return (
 		<div className="container">
 			<div className="nav">
-				<p>Random Avatar Generator</p>
+				<p>Generate Avatar's Randomly</p>
 			</div>
 			<div className="home">
 				<div className="btns">
